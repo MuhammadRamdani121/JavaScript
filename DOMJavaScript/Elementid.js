@@ -1,7 +1,13 @@
-const section1 = document.getElementById(`section1a`);
-// variabel.innerHTML = Mengubah HTML
-section1.innerHTML = "Keganti dengan JavaScript";
-// variabel.style.color = mengubah css
-section1.style.color = "red";
+function changeColor(newColor) {
+  const elem = document.getElementById("sekolah");
+  elem.style.color = newColor;
+}
 
-myPara.innerHTML = "Hello World!";
+document.querySelectorAll("button").forEach((button) => {
+  button.addEventListener("click", (event) => {
+    changeColor(event.target.textContent.toLowerCase());
+  });
+});
+// selection with DOM
+// by Id
+// const sekolah = document.getElementById("sekolah")

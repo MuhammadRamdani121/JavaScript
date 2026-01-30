@@ -11,3 +11,20 @@ document.querySelectorAll("button").forEach((button) => {
 // selection with DOM
 // by Id
 // const sekolah = document.getElementById("sekolah")
+// by Tag Name
+// const allButton = document.getElementsByTagName(`button`);
+// by ClassName
+// const allClass = document.hetElementsByClassName(``);
+// QuerrySelector
+// const Querry = document.querrySelector(`h1`) // element h1 pertama
+// const Querry = document.querrySelector(`#red`) // element pertama dengan Id bernilai `red`
+// const Querry = document.querrySelector(`.className`) // element pertama dengan className bernilai `className`
+// const Querry = document.querrySelectorALL(`.className`) // element pertama dengan className bernilai `className`
+
+const innerText = document.getElementById(`innerText`);
+const textContent = document.getElementById(`textContent`);
+const innerHtml = document.getElementById(`innerHtml`);
+
+innerText.innerText = `Ini Contoh Inner Text <b>`;
+textContent.textContent = `Ini Contoh Text Content <b>`;
+innerHtml.innerHTML = `Ini Contoh Inner <b>HTML </b>`;

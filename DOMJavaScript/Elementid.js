@@ -24,7 +24,11 @@ document.querySelectorAll("button").forEach((button) => {
 const innerText = document.getElementById(`innerText`);
 const textContent = document.getElementById(`textContent`);
 const innerHtml = document.getElementById(`innerHtml`);
+const gambarAttributes = document.querySelector(`#gambarAttributes`);
 
 innerText.innerText = `Ini Contoh Inner Text <b>`;
 textContent.textContent = `Ini Contoh Text Content <b>`;
 innerHtml.innerHTML = `Ini Contoh Inner <b>HTML </b>`;
+
+gambarAttributes.alt = "kiw";
+gambarAttributes.setAttribute(`class`, `isian-class`);

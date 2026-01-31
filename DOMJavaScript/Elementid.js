@@ -21,14 +21,28 @@ document.querySelectorAll("button").forEach((button) => {
 // const Querry = document.querrySelector(`.className`) // element pertama dengan className bernilai `className`
 // const Querry = document.querrySelectorALL(`.className`) // element pertama dengan className bernilai `className`
 
+// Merubah Isi Html
 const innerText = document.getElementById(`innerText`);
 const textContent = document.getElementById(`textContent`);
 const innerHtml = document.getElementById(`innerHtml`);
-const gambarAttributes = document.querySelector(`#gambarAttributes`);
 
 innerText.innerText = `Ini Contoh Inner Text <b>`;
 textContent.textContent = `Ini Contoh Text Content <b>`;
 innerHtml.innerHTML = `Ini Contoh Inner <b>HTML </b>`;
 
+const gambarAttributes = document.querySelector(`#gambarAttributes`);
 gambarAttributes.alt = "kiw";
 gambarAttributes.setAttribute(`class`, `isian-class`);
+
+// style javaScript
+const style = document.getElementById(`style`);
+style.style.color = "red";
+style.style.textAlign = "end";
+// cara ke 2 classlist
+style.setAttribute(`class`, `underline`);
+
+//element parent,child dan sibling
+const textBold = document.querySelector(`b`);
+const beforeChild = textBold.parentElement;
+// textBold.previousElementSibling
+// textBold.nextElementSibling

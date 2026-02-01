@@ -46,3 +46,14 @@ const textBold = document.querySelector(`b`);
 const beforeChild = textBold.parentElement;
 // textBold.previousElementSibling
 // textBold.nextElementSibling
+document.createElement(`img`);
+// Append
+const newImage = document.createElement(`img`);
+newImage.src =
+  "https://i.pinimg.com/originals/47/af/05/47af05dc6b91f0b38a91d71af25471ee.jpg";
+newImage.append(`a`);
+
+// APpend Child
+document.body.appendChild(newImage);
+// Membuat class pada newImage
+newImage.classList.add(`square`);

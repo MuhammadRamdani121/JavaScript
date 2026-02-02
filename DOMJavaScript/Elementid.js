@@ -1,13 +1,34 @@
-function changeColor(newColor) {
-  const elem = document.getElementById("sekolah");
-  elem.style.color = newColor;
-}
+const elem = document.getElementById("sekolah");
 
-document.querySelectorAll("button").forEach((button) => {
-  button.addEventListener("click", (event) => {
-    changeColor(event.target.textContent.toLowerCase());
-  });
+const buttonRed = document.getElementById(`red`);
+const buttonBlue = document.getElementById(`blue`);
+buttonRed.onclick = function () {
+  elem.style.color = "red";
+};
+buttonBlue.onclick = function () {
+  elem.style.color = "blue";
+};
+
+buttonBlue.onmouseover = () => {
+  elem.style.color = "blue";
+};
+buttonRed.onmouseover = () => {
+  elem.style.color = "red";
+};
+buttonBlue.onmouseout = () => {
+  elem.style.color = "black";
+};
+buttonRed.onmouseout = () => {
+  elem.style.color = "black";
+};
+
+buttonBlue.addEventListener(`click`, function () {
+  elem.style.color = "blue";
 });
+buttonRed.addEventListener(`click`, function () {
+  elem.style.color = "red";
+});
+
 // selection with DOM
 // by Id
 // const sekolah = document.getElementById("sekolah")
@@ -17,6 +38,7 @@ document.querySelectorAll("button").forEach((button) => {
 // const allClass = document.hetElementsByClassName(``);
 // QuerrySelector
 // const Querry = document.querrySelector(`h1`) // element h1 pertama
+// const secondSpan = spans[1];
 // const Querry = document.querrySelector(`#red`) // element pertama dengan Id bernilai `red`
 // const Querry = document.querrySelector(`.className`) // element pertama dengan className bernilai `className`
 // const Querry = document.querrySelectorALL(`.className`) // element pertama dengan className bernilai `className`
@@ -57,3 +79,10 @@ newImage.append(`a`);
 document.body.appendChild(newImage);
 // Membuat class pada newImage
 newImage.classList.add(`square`);
+
+// remove child
+// mengambil dengan by id
+const firstLi = document.getElementById(`firstLi`);
+// firstLi.parentElement.removeChild(firstLi);
+// cara kedua tanpa memanggil parent element
+// firstLi.remove();

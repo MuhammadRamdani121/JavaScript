@@ -16,3 +16,18 @@ if (nilai >= 80 && nilai <= 100) {
 if (grade === "A") {
   console.log("Selamat cuy");
 }
+
+const form = document.getElementById(`form`);
+const nilai1 = document.getElementById(`nilai1`);
+const enter = document.getElementById("enter");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const nilaiInput = Number(nilai1.value);
+  if (nilaiInput >= 80) {
+    alert(`Selamat Anda Mendapatkan A`);
+  } else {
+    alert(`asd`);
+  }
+});

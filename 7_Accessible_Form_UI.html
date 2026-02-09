@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="border-3 mx-110 my-30 rounded-2xl h-[450px]">
+    <main class="mt-10 mx-3">
+      <section class="flex justify-evenly">
+        <form action="" class="flex flex-col gap-1 relative">
+          <label for="">Full Name</label>
+          <input
+            class="border-1 pl-2 w-[210px]"
+            type="text"
+            placeholder="What should we call you?"
+          />
+          <label for="">Email</label>
+          <input
+            class="border-2 border-red-500 rounded-lg placeholder:text-red-500 pl-2"
+            type="text"
+            placeholder="john@doe.com"
+          />
+          <p class="text-red-500 p-2 -mt-3">Email is already taken</p>
+          <label for="">Enter Password</label>
+          <input
+            class="border-1"
+            type="password"
+            name=""
+            id=""
+            placeholder=" xxxxxxxxx"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-eye-fill absolute top-50 left-47"
+            viewBox="0 0 16 16"
+          >
+            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+            <path
+              d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"
+            />
+          </svg>
+
+          <label for="">Confirm Password</label>
+          <input
+            class="border-1"
+            type="password"
+            name=""
+            id=""
+            placeholder=" xxxxxxxxx"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-eye-fill absolute top-[257px] left-47"
+            viewBox="0 0 16 16"
+          >
+            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+            <path
+              d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"
+            />
+          </svg>
+          <button>Update Profile</button>
+        </form>
+        <article>
+          <aside
+            class="mt-2 border-1 h-[100px] flex flex-col justify-center items-center"
+          >
+            <nav class="relative mr-15">
+              <p
+                class="absolute w-15 h-15 rounded-full border-2 border-r-gray-400 border-b-gray-400 -rotate-44"
+              ></p>
+            </nav>
+            <!-- <p class="absolute rounded-full border-r-1 w-4 h-4">.</p> -->
+            <p class="text-center py-4">65%</p>
+            <h1>Profile Completeness</h1>
+          </aside>
+
+          <nav>
+            <p>create Account</p>
+            <p>Update Roadmap Progress</p>
+            <p>Setup Public Profile</p>
+            <p>Complete yout first project</p>
+            <p>Invite your friends</p>
+          </nav>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

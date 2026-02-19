@@ -37,12 +37,12 @@
 // const angka = [1,2,3,4,5];
 // Hasil:
 
-// [5,4,3,2,1]
-// const angka = [1, 2, 3, 4, 5];
+// [5, 4, 3, 2, 1];
+const angka = [1, 2, 3, 4, 5];
 
-// const balikAngka = (angka) => angka + int.split().reverse().join();
+const balikAngka = (angka) => angka + int.split().reverse().join();
 
-// console.log(balikAngka);
+console.log(balikAngka);
 
 // Challenge 5 — Cari User Tertua (Level React 😎)
 // const users = [
@@ -56,15 +56,15 @@
 // Output:
 
 // { nama: "Budi", umur: 30 }
-// const users = [
-//   { nama: "Andi", umur: 20 },
-//   { nama: "Budi", umur: 30 },
-//   { nama: "Caca", umur: 25 },
-// ];
+const users = [
+  { nama: "Andi", umur: 20 },
+  { nama: "Budi", umur: 30 },
+  { nama: "Caca", umur: 25 },
+];
 
-// const umurBesar = users.filter((users) => users.umur >= 30);
+const umurBesar = users.filter((users) => users.umur >= 30);
 
-// console.log(umurBesar);
+console.log(umurBesar);
 
 const sapa = (nama) => "Halo " + nama;
 

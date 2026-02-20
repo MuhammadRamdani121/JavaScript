@@ -30,6 +30,62 @@ const user = {
   nama: "ramdani",
   umur: 20,
 };
-const { nama, umur } = user;
+
 console.log(user.nama);
+
+// 6.Destructring
+const { nama, umur } = user;
 console.log(umur);
+
+// 7. Spread Operator ...
+const update = {
+  ...user,
+  nama: "aliando",
+};
+console.log(update);
+
+// 8. Kondisi (If / Ternary)
+// kondisi ? hasiltrue : hasilfalse;
+
+// umur >= 18 ? "dewasa" : "Anak";
+
+// 9.Template String
+console.log(`${user.nama} Berumur ${user.umur}`);
+
+// 10.Method String & Array
+// .lenght
+user.nama.toUpperCase();
+user.nama.toLowerCase();
+nama.split();
+// nama.join();
+// nama.reverse();
+console.log(user.nama.length);
+console.log(user.nama.toUpperCase());
+console.log(user.nama.toLowerCase());
+console.log(user.nama.split());
+// console.log(user.nama.join());
+// console.log(user.nama.reverse());
+
+// Rumus Paling Sering di react
+// Render Data
+// user.map (item = > item.nama)
+
+//Filter Data
+// data.filter((item) => item.active);
+
+// Update Object
+// setUser({
+//   ...user,
+//   umur: 21
+// });
+
+// Tambah Data Ke Array
+// setData([...data, newItem]);
+
+// Update Data Berdasarkan ID (SUPER SERING)
+// data.map(item =>
+//   item.id === id ? {...item, nama: "baru"} : item
+// );
+
+// Ambil Data Object
+// const { nama } = user;
